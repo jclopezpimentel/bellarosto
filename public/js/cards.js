@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   var zindex = 10;
   
   $("div.card").click(function(e){
@@ -24,7 +25,6 @@ $(document).ready(function(){
         $(this)
           .css({zIndex: zindex})
           .addClass("show");
-
       }
 
       zindex++;
@@ -42,28 +42,74 @@ $(document).ready(function(){
     
   });
 
+/*----------------------------------------------------------------------------------------------*/
+/* Contáctanos */
   // show contact
-$('.chat-wrap').click(function(){
-  $(this).addClass('active');
-  $('.contactme').addClass('active');
-  $('.overlay').fadeIn();
-});
+  $('.chat-wrap').click(function(){
+    $(this).addClass('active');
+    $('.contactme').addClass('active');
+    $('.overlay').fadeIn();
+  });
 
-// overlay escape click
-$('.overlay').click(function(){
-  $('.chat-wrap').removeClass('active');
-  $('.contactme').removeClass('active');
-  $('.overlay').fadeOut();
-});
+  // overlay escape click
+  $('.overlay').click(function(){
+    $('.chat-wrap').removeClass('active');
+    $('.contactme').removeClass('active');
+    $('.overlay').fadeOut();
+  });
 
-// inputs background on blur
-$('.inputs').blur(function(){
-  if($(this).val().length > 0){
-    $(this).addClass('white');
-  } else {
-    $(this).removeClass('white');
+  // inputs background on blur
+  $('.inputs').blur(function(){
+    if($(this).val().length > 0){
+      $(this).addClass('white');
+    } else {
+      $(this).removeClass('white');
+    }
+  });
+
+/*----------------------------------------------------------------------------------------------*/
+/* Slider */
+  var elem = document.querySelectorAll('.carousel');
+  var options = {
+    indicators: true,
+    dist : 0
   }
+  var instance = M.Carousel.init(elem,options);
+   $('.first-category, .second-category, .three-category, .fourth-category').hide();
+  autoplay();
+
+  function autoplay(){
+    $('.carousel').carousel('next');
+    setTimeout(autoplay, 3000); 
+  }
+
+  function hideAll(){
+    $('.all-categories, .first-category, .second-category, .three-category, .fourth-category').hide();
+  };
+
+  $("#first").click(function(event) {
+    hideAll();
+    $(".first-category").show();
+  });
+
+  $("#second").click(function(event) {
+    hideAll();
+    $(".second-category").show();
+  });
+
+  $("#three").click(function(event) {
+    hideAll();
+    $(".three-category").show();
+  });
+
+  $("#fourth").click(function(event) {
+    hideAll();
+    $(".fourth-category").show();
+  });
+
+
+    $('.collapsible').collapsible();
+
 });
 
-// boom
-});
+

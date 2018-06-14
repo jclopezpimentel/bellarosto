@@ -18,3 +18,23 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('sections/header', function(){
+    return view("sections.header");
+});
+
+Route::get('sections/service', function(){
+    return view("sections.service");
+});
+
+Route::get('/sections/knowMore', function(){
+    return view("sections.knowMore");
+});
+
+Route::get('/sections/gallery', function(){
+    return view("sections.gallery");
+});
+
+Route::get('/sections/contactme', function(){
+    return view("sections.contactme");
+});

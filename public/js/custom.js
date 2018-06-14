@@ -41,15 +41,12 @@
   $(window).scroll(function() {
     if ($(".navbar-default").offset().top > 50) {
       $(".navbar-fixed-top").addClass("top-nav-collapse");
+      $(".navbar-brand").css('width', '21rem');
     } else {
       $(".navbar-fixed-top").removeClass("top-nav-collapse");
+      $(".navbar-brand").css('width', '33rem');
     }
   });
 
-  // Testimonials Slider
-  $('.bxslider').bxSlider({
-    adaptiveHeight: true,
-    mode: 'fade'
-  });
 
 })(jQuery);

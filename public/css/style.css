@@ -144,6 +144,7 @@ background: linear-gradient(to right, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, F
   background: #ff6e7f;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+opacity: .97;
 }
 
 .logo-dec {
@@ -181,13 +182,13 @@ margin-top: -0px;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  color: #be9e21;
+  color: #004e92;
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
   background-color: transparent;
-  color: #FFEFBA;
+  color: #4b6cb7;
 }
 
 .banner-info {
@@ -480,6 +481,10 @@ TESTIMONIAL
 ************************************
 ***********************************/
 
+#gallery{
+  background-color: #F3F4F8;
+}
+
 #testimonial {
   background: url('../img/bg.jpg') no-repeat;
   background-size: cover;
@@ -769,6 +774,21 @@ cta
 Responsive media queries
 ************************************
 ***********************************/
+@media (max-width: 991px){
+  .buttons-large{
+    display: none;
+  }
+  .buttons-small{
+    display: inline-block !important;
+    margin-bottom: 11vw;
+  }
+
+  .buttons-small div{
+    display: inline-table;
+    word-wrap: break-word;
+    white-space: nowrap;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 980px) {
   .service-item, .blog-sec, .wrap-item, .loction-info {
