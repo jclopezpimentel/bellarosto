@@ -39,11 +39,11 @@
 
   //jQuery to collapse the navbar on scroll
   $(window).scroll(function() {
-    if ($(".navbar-default").offset().top > 50) {
-      $(".navbar-fixed-top").addClass("top-nav-collapse");
+    if ($(".navbar-default").offset().top > 60) {
+      $(".navbar-fixed-top").addClass("top-nav-collapse z-depth-1");
       $(".navbar-brand").css('width', '21rem');
     } else {
-      $(".navbar-fixed-top").removeClass("top-nav-collapse");
+      $(".navbar-fixed-top").removeClass("top-nav-collapse z-depth-1");
       $(".navbar-brand").css('width', '33rem');
     }
   });

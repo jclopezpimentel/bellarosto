@@ -2,19 +2,16 @@
   <header>
     <h2 align="center">Conozca Más</h2>
   </header>
-  <div class="container">
+  <div style="margin-right: 4vw;margin-left: 4vw;">
     <div class="row">
-
       <ul class="collapsible">
         <li>
           <div class="collapsible-header">
-            <i class=""></i>
               <h4>¿Qué es la micropigmentacion?</h4>
-            
           </div>
           <div class="collapsible-body">
             <span>La Dermopigmetación o micropigmentacion es un procedimiento utilizado desde la antigüedad a través de la cual se colocaban partículas de diversos materiales debajo de la superficie cutónea con el fin de obtener dibujos "permanentes".<br><br> 
-            Hoy en día La micropigmentacion es un procedimiento de implante de pigmentos en la dermis. Con efectos de afinación de rasgos estéticos. <br><br> 
+            Hoy en día la micropigmentacion es un procedimiento de implante de pigmentos en la dermis. Con efectos de afinación de rasgos estéticos. <br><br> 
             Es un microtatuaje de belleza.<br><br>  
             Se sugiere generalmente para: <br><br> 
             
@@ -26,10 +23,26 @@
 
         <li>
           <div class="collapsible-header">
-            <i class="material-icons">place</i>Second
+            <h4>Otras aplicaciones de la Micropigmentacion son:</h4>
           </div>
           <div class="collapsible-body">
-            <span>Lorem ipsum dolor sit amet.</span>
+            <span>Cejas:<br>
+            (compacto, sombreado o simulando vellos)con un efecto natural al rellenar las cejas y cejas escasas.<br><br>
+
+            Ojos:<br>
+            Superior e inferior (entre pestañas, delineado, área conjuntiva o líneas bicolor o iluminación,sombreado).<br><br>
+
+            Labios: <br>
+            Ensancharlos o disminuirlos corregirlos o acortarlos (perfilado y relleno).
+            pómulos, área de rubor, lunares coquetos y Paramédico (simulación areola, pezón perfilado
+            en labio leporino, camuflaje de cicatrices).
+            Que se efectúa con un aparato electromecánico llamado demógrafo o con un inductor manual.<br><br>
+            Se emplean agujas esterilizadas y accesorios desechables y de un solo uso que son abiertos en presencia del cliente.<br><br>
+            El efecto del implante de pigmento dentro de la piel será más de 2 años, a cuyo término, el usuario decide si deja que este  pierda intensidad hasta eliminarse por el paso del tiempo o tomar la opcián de renovarlo con un retoque en una nueva sesión.<br><br>
+            Para realizarla utilizamos pigmentos hipoalergénicos de origen vegetal y mineral que cumplen con estrictas normas industriales FDA Y CAMIEF así como, gubernamentales en su elaboración y distribución al mercado como son: <br>
+            Calidad de las materias primas, tamaño de la molécula control de inocuidad, insolubilidad, inercia, fecha de elaboración, de caducidad y datos del fabricante. <br><br>
+            Entre sus grandes cualidades destaca el no contener plomo, carbón ni mercurio.
+            </span>
           </div>
         </li>
 
@@ -51,7 +64,6 @@
 
         <li>
           <div class="collapsible-header">
-            <i class="glyphicon glyphicon-ok"></i>
             <h4>Ventajas en un delineado de cejas</h4>
           </div>
           <div class="collapsible-body">
@@ -75,7 +87,6 @@
         
         <li>
           <div class="collapsible-header">
-            <i></i>
             <h4>Ventajas en un delineado de ojos</h4>
           </div>
           <div class="collapsible-body">
@@ -137,7 +148,6 @@
           </div>
         </li>        
       </ul>
-
     </div>
   </div>
 </section>

@@ -1,40 +1,35 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
+/*Página Principal */
 Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+/*
+** Administrador
+*/
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('sections/header', function(){
-    return view("sections.header");
+/*Página para inicio de sesion*/
+Route::get('/login', function(){
+	return view('administrator.login');
+});
+/*Página Principal*/
+Route::get('/dashboard', function(){
+	return view('administrator.dashboard');
 });
 
-Route::get('sections/service', function(){
-    return view("sections.service");
-});
+/*
+** Controlador Image
+*/
 
-Route::get('/sections/knowMore', function(){
-    return view("sections.knowMore");
-});
+/*Ruta a la función UploadImage*/
+Route::get('/uploadImage', 'ImageController@uploadImage');
 
-Route::get('/sections/gallery', function(){
-    return view("sections.gallery");
-});
+/*Ruta a la función DeleteImage*/
+Route::get('/deleteImage', 'ImageController@deleteImage');
 
-Route::get('/sections/contactme', function(){
-    return view("sections.contactme");
-});
+/*Ruta a la función updateVisibilityImage*/
+Route::get('/updateVisibilityImage', 'ImageController@updateVisibilityImage');
+
+/*Ruta a la función updateCategoryImage*/
+Route::get('/updateCategoryImage', 'ImageController@updateCategoryImage');

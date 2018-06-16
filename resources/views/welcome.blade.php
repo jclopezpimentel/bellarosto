@@ -35,6 +35,22 @@
 
       @include('sections.contactme')
 
+      <div id='footer-wrapper'>
+        <div class='footer section' id='footer'>
+          <div id="direccion">
+            <p>Dirección: Fraccionamiento el Laurel<br>Calle Tule
+            Manz. 20 Lote 8 Comitan, Chiapas</p>
+          </div>    
+          <div class="redes">
+            <a class="rss" target="_blank">
+              <img src="https://png.icons8.com/color/500/whatsapp.png" width="35px" /><br><p style="margin: 0 0 10px -20px;">+52 963 122 7005</p>
+            </a>
+            <a class="facebook" href="https://www.facebook.com/pages/Clinica-Magally-Delineados-Permanetes/328214608337" target="_blank">
+              <img src="http://files.softicons.com/download/social-media-icons/ios-7-style-social-media-icons-by-design-bolts/png/256x256/Facebook.png" width="35px"/><br><p style="margin: 0 0 10px -40px;">/Clinica-Magally-Delineados-Permanetes</p>
+            </a>            
+          </div>
+        </div>
+      </div>      
     </div>
   </body>
   <script src="/js/app.js"></script>

@@ -701,11 +701,6 @@ contact
 contact
 ************************************
 ***********************************/
-
-#footer {
-  padding: 20px 0px;
-}
-
 .scrollToTop {
   position: fixed;
   bottom: 12px;
@@ -727,7 +722,7 @@ contact
 }
 
 #footer a {
-  color: #be9e21;
+  color: #fff;
   font-weight: 400;
 }
 

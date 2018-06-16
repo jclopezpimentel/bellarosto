@@ -13,14 +13,7 @@
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-              @if (Route::has('login'))
-                @auth
-                <li class="active"><a href="#main-header">Inicio</a></li>
-              @else
-                  <li><a href="{{ route('login') }}">Login</a></li>
-                  <!-- <li><a href="{{ route('register') }}">Register</a></li> -->
-                @endauth
-              @endif
+              <li><a href="{{ url('administrator/login') }}">Login</a></li>
               <li class="active"><a href="#main-header">Inicio</a></li>
               <li class=""><a href="#service">Servicios</a></li>
               <li class=""><a href="#knowMore">Conozca Más</a></li>
