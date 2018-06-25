@@ -211,10 +211,12 @@ h2.bnr-sub-title {
   font-size: 75px;
   padding: 20px 0px;
   font-weight: 700;
+  color: crimson;
 }
 
 .bnr-para {
   font-weight: 300;
+  color: black;
 }
 
 .btn-download, .btn-more, .btn-download:hover, .btn-download:focus, .btn-more:focus {
