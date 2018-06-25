@@ -13,10 +13,19 @@ Route::get('/', function () {
 Route::get('/login', function(){
 	return view('administrator.login');
 });
+
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
 /*Página Principal*/
 Route::get('/dashboard', function(){
 	return view('administrator.dashboard');
 });
+
+/*
+** Controlador Administrador
+*/
+
+Route::post('/checkUser', 'AdministratorController@checkUser');
 
 /*
 ** Controlador Image

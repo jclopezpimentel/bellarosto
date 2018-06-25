@@ -13,7 +13,7 @@
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="{{ url('administrator/login') }}">Login</a></li>
+              <li><a href="{{ url('/login') }}">Login</a></li>
               <li class="active"><a href="#main-header">Inicio</a></li>
               <li class=""><a href="#service">Servicios</a></li>
               <li class=""><a href="#knowMore">Conozca Más</a></li>

@@ -110,8 +110,8 @@ HEADER
 
 .header {
 background: #ff6e7f;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(94deg, rgb(250, 253, 255), rgb(255, 110, 127));
+background: linear-gradient(94deg, rgb(250, 253, 255), rgb(255, 110, 127));
   background-size: cover;
   min-height: 650px;
   position: relative;
@@ -142,8 +142,9 @@ background: linear-gradient(to right, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, F
 .top-nav-collapse {
   padding: 0;
   background: #ff6e7f;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background: -webkit-linear-gradient(94deg, rgb(250, 253, 255), rgb(255, 110, 127));
+background: linear-gradient(94deg, rgb(250, 253, 255), rgb(255, 110, 127));
 opacity: .97;
 }
 

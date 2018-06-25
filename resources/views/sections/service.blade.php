@@ -17,7 +17,7 @@
           <ul>
             <li class="list-expandend"><a>Ceja compacta</a></li>
             <li class="list-expandend"><a>Ceja sombreada</a></li>
-            <li class="list-expandend"><a>Ceja pelo a pelo</a></li>
+            <li class="list-expandend"><a>Ceja pelo a pelo microblanding</a></li>
             <li class="list-expandend"><a>Linea negra en párpado superior e inferior</a></li>
             <li class="list-expandend"><a>Relleno entre pestañas superior e inferior (efecto pestaña)</a></li>
             <li class="list-expandend"><a>Relleno en área conjuntiva en ojos superior e inferior</a></li>
@@ -66,6 +66,7 @@
       <div class="card-flap flap1">
         <div class="card-description">
           <ul>
+            <li class="list-expandend"><a>Pigmentación en áreas con vitiligo (según piel y zona)</a></li>
             <li class="list-expandend"><a>Pigmentación de areola y pezon</a></li>
             <li class="list-expandend"><a>Rediseño de labios a personas con cirugia por labio leporino</a></li>
             <li class="list-expandend"><a>Repoblación capilar</a></li>
@@ -88,12 +89,12 @@
       <div class="card-flap flap1">
         <div class="card-description">
           <ul>
-            <li class="list-expandend"><a>Pigmentación en áreas con vitiligo (según piel y zona)</a></li>
             <li class="list-expandend"><a>Tratamientos con colageno, elastina y acido hialuronico</a></li>
             <li class="list-expandend"><a>Tratamientos para eliminar lineas de expresión</a></li>
             <li class="list-expandend"><a>Alternativas para la remoción de pigmentos mal implantados</a></li>
             <li class="list-expandend"><a>Eliminación de manchas seniles, pecas, y por el sol</a></li>
             <li class="list-expandend"><a>Eliminación de milios y verrugas en rostro y cuello</a></li>
+            <li class="list-expandend"><a>Eliminación de manchas hipercromías con plasma</a></li>
           </ul>
         </div>
         <div class="card-flap flap2">

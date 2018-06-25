@@ -13,51 +13,68 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/css/core/bootstrap.min.css">    
     <link href="/css/now-ui-kit.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/demo.css">
   </head>
-<body class="login-page sidebar-collapse">
+  <body class="login-page sidebar-collapse">
     <div class="page-header" filter-color="orange">
-        <div class="page-header-image" style="background-image:url(/img/login.jpg)"></div>
-        <div class="container">
-            <div class="col-md-4 content-center">
-                <div class="card card-login card-plain">
-                    <form class="form" method="" action="">
-                        <div class="header header-primary text-center">
-                            <div class="logo-containers">
-                                <img src="/img/logo_bela_rosto_png_sintexto.png"  alt="Logo">
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="input-group form-group-no-border input-lg">
-                                <span class="input-group-addon">
-                                    <i class="now-ui-icons users_circle-08"></i>
-                                </span>
-                                <input type="text" class="form-control" placeholder="Usuario">
-                            </div>
-                            <div class="input-group form-group-no-border input-lg">
-                                <span class="input-group-addon">
-                                    <i class="now-ui-icons text_caps-small"></i>
-                                </span>
-                                <input type="password" placeholder="Contraseña" class="form-control" />
-                            </div>
-                        </div>
-                        <div class="footer text-center">
-                            <a href="#pablo" class="btn btn-primary btn-round btn-lg btn-block">Iniciar</a>
-                        </div>
-                    </form>
+      <div class="page-header-image" style="background-image:url(/img/login.jpg)"></div>
+      <div class="container">
+        <div class="col-md-4 content-center">
+          <div class="card card-login card-plain">
+            <form class="form" id="formSubmitLogin">
+              <div class="header header-primary text-center">
+                <img src="/img/logo_bela_rosto_png_sintexto.png"  alt="Logo">
+              </div>
+              <div class="content">
+                <div class="input-group form-group-no-border input-lg">
+                  <span class="input-group-addon">
+                    <i class="now-ui-icons users_circle-08"></i>
+                  </span>
+                  <input type="text" class="form-control" placeholder="Usuario" name="username" />
                 </div>
-            </div>
+                <div class="input-group form-group-no-border input-lg">
+                  <span class="input-group-addon">
+                    <i class="now-ui-icons text_caps-small"></i>
+                  </span>
+                  <input type="password" placeholder="Contraseña" class="form-control" name="password" />
+                </div>
+              </div>
+              <div class="footer text-center">
+                <input value="Iniciar" id="btnSubmit" class="btn btn-primary btn-round btn-lg btn-block" type="submit">
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
   <!--Core JS Files-->
-  <script src="/js/core/jquery.3.2.1.min.js"></script>
-  <script src="/js/core/popper.min.js"></script>
-  <script src="/js/core/bootstrap.min.js"></script> 
-  <script src="/js/plugins/bootstrap-switch.js"></script>
-  <script src="/js/plugins/nouislider.min.js" type="text/javascript"></script>
-  <script src="/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
-  <script src="/js/now-ui-kit.js" type="text/javascript"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/now-ui-kit.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#formSubmitLogin").on('submit', function(event) {
+        event.preventDefault();
 
-
+        $.ajax({
+          url: '/checkUser',
+          type: 'post',
+          headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+          data: new FormData(this), 
+          processData: false,
+          contentType: false,
+        })
+        .done(function(data) {
+          if (data == 1) {
+            window.location.href = '{{url("/dashboard")}}';
+          }else{
+            alert("Datos incorrectos");
+            window.location.href = '{{url("/login")}}';
+          }
+        })
+        .fail(function() {
+          window.location.href = '{{url("/login")}}';
+        });        
+      });
+    });
+  </script>
 </html>

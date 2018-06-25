@@ -46,7 +46,7 @@
           </div>
         </li>
 
-        <li>
+<!--    <li>
           <div class="collapsible-header">
             <h4>¿Qué es el delineado de cejas?</h4>
           </div>
@@ -125,7 +125,8 @@
               <li>Resaltaras siempre tus labios acorazonados.</li>
             </ul>
           </div>
-        </li>
+        </li> 
+-->
 
         <li>
           <div class="collapsible-header">
@@ -140,6 +141,24 @@
 
         <li>
           <div class="collapsible-header">
+            <h4>Consejos Útiles</h4>
+          </div>
+          <div class="collapsible-body">
+            
+          </div>
+        </li>
+
+        <li>
+          <div class="collapsible-header">
+            <h4>La diferencia en Tatuaje convencional y Micropigmentación</h4>
+          </div>
+          <div class="collapsible-body">
+            
+          </div>
+        </li>
+
+<!--    <li>
+          <div class="collapsible-header">
             <h4>Ventajas en las correcciones de pigmentacion</h4>
           </div>
           <div class="collapsible-body">
@@ -147,6 +166,7 @@
             Para este procedimiento es necesario consulta previa para valoración y explicar a detalle del procedimiento a realizar y los cuidados estrictos para una rápida recuperación.</span>
           </div>
         </li>        
+-->
       </ul>
     </div>
   </div>
