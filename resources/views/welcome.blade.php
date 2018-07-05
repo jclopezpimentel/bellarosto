@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Bela Rosto</title>
+    <title>Bela Rostro</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
     <!-- Styles -->
@@ -35,7 +35,6 @@
 
       @include('sections.contactme')
 
-      
       <div id='footer-wrapper'>
         <div class='footer section' id='footer'>
           <div id="direccion">
@@ -47,12 +46,11 @@
               <img src="https://png.icons8.com/color/500/whatsapp.png" width="35px" /><br><p style="margin: 0 0 10px -20px;">+52 963 122 7005</p>
             </a>
             <a class="facebook" href="https://www.facebook.com/pages/Clinica-Magally-Delineados-Permanetes/328214608337" target="_blank">
-              <img src="http://files.softicons.com/download/social-media-icons/ios-7-style-social-media-icons-by-design-bolts/png/256x256/Facebook.png" width="35px"/><br><p style="margin: 0 0 10px -40px;">/Clinica-Magally-Delineados-Permanetes</p>
+              <img src="/img/social-facebook-icon.png" width="35px"/><br><p style="margin: 0 0 10px -40px;word-wrap: break-word;">/Clinica-Magally-Delineados-Permanetes</p>
             </a>            
           </div>
         </div>
-      </div>  
-      
+      </div>      
     </div>
   </body>
   <script src="/js/app.js"></script>
