@@ -17,10 +17,7 @@ Route::get('/login', function(){
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 /*Página Principal*/
-Route::get('/dashboard', function(){
-	return view('administrator.dashboard');
-});
-
+Route::get('/dashboard', 'AdministratorController@dashboard');
 /*
 ** Controlador Administrador
 */
@@ -42,3 +39,8 @@ Route::get('/updateVisibilityImage', 'ImageController@updateVisibilityImage');
 
 /*Ruta a la función updateCategoryImage*/
 Route::get('/updateCategoryImage', 'ImageController@updateCategoryImage');
+
+
+Route::post('/saveCategory', 'AdministratorController@saveCategory');
+
+Route::post('/deleteCategory', 'AdministratorController@deleteCategory');
