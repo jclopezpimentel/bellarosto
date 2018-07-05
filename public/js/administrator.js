@@ -20,10 +20,10 @@ $(document).ready(function(){
     })
     .done(function(data) {
       if (data == 1) {
-        window.location.href = '{{url("/dashboard")}}';
+        window.location.href = '/dashboard';
       }else{
         alert("Datos incorrectos");
-        window.location.href = '{{url("/login")}}';
+        window.location.href = '/login';
       }
     });
   });

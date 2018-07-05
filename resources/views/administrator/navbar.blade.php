@@ -2,7 +2,7 @@
 <nav class="navbar nav navbar-nav navbar-expand-lg bg-primary fixed-top" color-on-scroll="400"  role="tablist">
   <div class="container">
     <div class="dropdown button-dropdown" style="left: 97%">
-      <a class="navbar-brand dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" href="{{ url('/logout') }}" style="font-size: 15.5px;font-weight: 550;">
+      <a class="navbar-brand dropdown-toggle" href="{{ url('/logout') }}" style="font-size: 15.5px;font-weight: 550;">
        <i class="now-ui-icons media-1_button-power"></i> SALIR
       </a>
     </div>
