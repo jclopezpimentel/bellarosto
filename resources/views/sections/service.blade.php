@@ -10,7 +10,7 @@
           <span class="left"></span>
           <span class="right"></span>
         </a>
-        <h4>Delineados permantes</h4>
+        <h4>Micropigmentación</h4>
       </div>
       <div class="card-flap flap1">
         <div class="card-description">

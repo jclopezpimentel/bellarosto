@@ -136,7 +136,7 @@ background: linear-gradient(94deg, rgb(250, 253, 255), rgb(255, 110, 127));
 	}
 }
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-  color: #002F2F;
+  color: ##43291d;
 }
 
 .top-nav-collapse {
@@ -183,13 +183,13 @@ margin-top: -0px;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  color: #004e92;
+  color: #43291d;
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
   background-color: transparent;
-  color: #4b6cb7;
+  color: #e94150;
 }
 
 .banner-info {
@@ -198,7 +198,7 @@ margin-top: -0px;
 }
 
 .bnr-title, .bnr-sub-title {
-font-family: 'Sacramento', cursive;
+font-family: 'Brush Script MT', cursive;
 }
 
 h1.bnr-title {
@@ -211,7 +211,7 @@ h2.bnr-sub-title {
   font-size: 75px;
   padding: 20px 0px;
   font-weight: 700;
-  color: crimson;
+  color: #43291d;
 }
 
 .bnr-para {

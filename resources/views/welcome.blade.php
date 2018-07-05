@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Bela Rostro</title>
+    <title>Bela Rosto</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
     <!-- Styles -->
@@ -35,6 +35,7 @@
 
       @include('sections.contactme')
 
+      
       <div id='footer-wrapper'>
         <div class='footer section' id='footer'>
           <div id="direccion">
@@ -50,7 +51,8 @@
             </a>            
           </div>
         </div>
-      </div>      
+      </div>  
+      
     </div>
   </body>
   <script src="/js/app.js"></script>

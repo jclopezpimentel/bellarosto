@@ -471,7 +471,7 @@ ul {
   width: 18vw;
   height: 4.5vw;
   border-radius: 4px;
-  background: #E74C3C;
+  background: #43291d;
   margin: 0 auto;
   margin-top: 1.5vw;
   overflow: hidden;
@@ -481,7 +481,7 @@ ul {
   /* Typo */
   line-height: 60px;
   text-align: center;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .flat-button:after {

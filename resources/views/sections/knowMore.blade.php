@@ -46,87 +46,6 @@
           </div>
         </li>
 
-<!--    <li>
-          <div class="collapsible-header">
-            <h4>¿Qué es el delineado de cejas?</h4>
-          </div>
-          <div class="collapsible-body">
-            <span> La ceja es el marco de expresión del rostro, por lo tanto, en delineado permanente,
-              es de suma importancia que el diseño sea totalmente simétrico y adecuado a cada tipo 
-              de rostro.<br><br> 
-              Las cejas pueden ayudar a hacer tus ojos más grandes y expresivos, añaden 
-              sofisticación a tu maquillaje y juventud a tu rostro.<br><br> 
-              El estilo de las cejas que te vamos a realizar debe reflejar tu personalidad y ayudar
-              a definir las  mejores facciones de tu rostro.
-            </span>
-          </div>
-        </li>
-
-        <li>
-          <div class="collapsible-header">
-            <h4>Ventajas en un delineado de cejas</h4>
-          </div>
-          <div class="collapsible-body">
-            <span> El delineado permanente de cejas tiene grandes ventajas tanto para mujeres como para
-             hombres,que debido a problemas de salud o que se depilan muy jovenes ( pierden los 
-             vellos de las cejas).O es escasa. En el cual podemos hacer una ceja mas abundante 
-             con un efecto compacto, sombreado o simulación vello.
-           </span>
-          </div>
-        </li>
-
-        <li>
-          <div class="collapsible-header">
-            <h4>¿Qué es el delineado de ojos?</h4>
-          </div>
-          <div class="collapsible-body">
-            <span> El delineado de ojos Permanentes se realizara según la forma de tu rostro y ojos, resaltará los rasgos que más te gusten y de paso disimularán aquellos “defectos” que no quieras destacar.<br><br> 
-            Es un gran aliado para la mujer de hoy porque te olvidaras, si ya se corrió el delineador o  traes los ojos todos manchados, donde podras nadar, correr, sudar y tus ojos siempre lucirán  perfectos, mostrando siempre un buen aspecto con una mirada muy expresiva alegre y joven.</span>
-          </div>
-        </li>
-        
-        <li>
-          <div class="collapsible-header">
-            <h4>Ventajas en un delineado de ojos</h4>
-          </div>
-          <div class="collapsible-body">
-            <ul>
-              <li class="">Ahorras tiempo valioso en tu arreglo personal.</li>
-              <li>Tendrás un rostro bello y listo las 24 horas del día.</li>
-              <li>Te olvidarás del delineador “corrido” y no dependerás ni del sol, ni de la lluvia para verte perfecta.</li>
-              <li>No tendrás que preocuparte por delinearte correctamente mientras manejas.</li>
-              <li>Un efecto visual te hará ver con mayor número de pestañas.</li>
-              <li>Una mejor definición de tus ojos.</li>
-            </ul>
-          </div>
-        </li>
-
-        <li>
-          <div class="collapsible-header">
-            <h4>¿Qué es un delineado o relleno de labios?</h4>
-          </div>
-          <div class="collapsible-body">
-            <span>Los labios forman una de las partes del rostro más importantes, ya que en ellos fijamos nuestra atención  cuando hablamos con alguien, es necesario cuidarlos y maquillarlos de la forma adecuada.<br><br>  
-            Con el delineado de labios damos un Efecto de volumen o delgadez en áreas especificas, resaltar la forma acorazonada Te delineamos Unos labios sensuales carnosos, los tonos que podemos aplicar en labios va desde   los tonos rosas naturales, vinos, rojos hasta tonos chocolate, todo depende del gusto del cliente y personalidad. Para ser candidata idónea y pigmentar esta área debes tener una excelente cicatrización de forma normal (no queloide).</span>
-          </div>
-        </li>
-        
-        <li>
-          <div class="collapsible-header">
-            <h4>Ventajas en un delineado o relleno de labios</h4>
-          </div>
-          <div class="collapsible-body">
-            <ul>
-              <li>Mantendrás siempre impecable los labios</li>
-              <li>Le darás color y armonía las 24Hrs del dia.</li>
-              <li>Podrás estar tranquila y segura de que no dejaras huella en vasos o servilletas</li>
-              <li>Podrás besar sin preocuparte de manchar</li>
-              <li>Podrás nutrir tus labios utilizando el glos o vitamina que mas te guste.</li>
-              <li>Resaltaras siempre tus labios acorazonados.</li>
-            </ul>
-          </div>
-        </li> 
--->
 
         <li>
           <div class="collapsible-header">
@@ -144,7 +63,15 @@
             <h4>Consejos Útiles</h4>
           </div>
           <div class="collapsible-body">
-            
+            <ul style="list-style-type:disc">
+              <li>Debido a que el procedimiento de micropigmentación es un implante de pigmento en la piel a nivel subepidermico, puede enrojecerse e inflamarse 2 o 3 días después del procedimiento (puede aplicar hielo u otros medicamentos que le recetara su profesional en micropigmentacion).</li>
+              <li>Cualquier procedimiento cosmético permanente puede requerir retoques. Es necesario que regrese al menos a una visita de revisión para  retoque en caso necesario al mes y medio o dos meses.</li>
+              <li>La intensidad del color de su procedimiento puede ser significativamente más fuerte, brillante, oscuro o más claro de lo que esperaba como resultado final. Tomaré un tiempo para que este torne al estado definitivo.</li>
+              <li>El procedimiento de micropigmentación puede durar de 1 a 3 años en condiciones óptimas y todo depende de las características  de la piel en cada paciente.</li>
+              <li>Todas las indicaciones de cuidados posteriores para tener una Micropigmentación perfecta se le entregarán por escrito el día del procedimiento.</li>
+              <li>Si desea donar sangre, es política de la cruz roja esperar mínimo de 1 año después de su procedimiento.</li>
+              <li>Cualquier duda o inquietud las podrá hacer en cualquier momento comunicándonos a nuestros números de teléfono o por los diferentes sistemas de redes sociales.</li>
+            </ul>
           </div>
         </li>
 
@@ -153,20 +80,11 @@
             <h4>La diferencia en Tatuaje convencional y Micropigmentación</h4>
           </div>
           <div class="collapsible-body">
-            
+            Los tatuajes convencionales son manchas o diseños producidos por sustancias coloreadas y que no se eliminan  del organismo con facilidad. Su objetos cortantes o punzo-cortantes.  Se implanta en cualquier área del cuerpo seleccionando por regla general zonas en donde la piel es gruesa. Las máquinas para tatuaje corporal mueven largas agujas de manera trepidatoria para hacer el depósito cromático en el espesor papilo-reticular de la dermis. El procedimiento es doloroso, traumatizante y tan profundamente implantado, que se presume que dura para siempre. Quien hace tatuaje corporal busca plasmar sus dibujos artísticos por el trazo y el color en grandes áreas de la piel. <br><br>
+            La Micropigmentación es un proceso diferente que se realiza en la delicada piel de la cara. Siempre buscará embellecer  y corregir de manera remodelados en caso de que el gusto o la moda cambien. Igualmente por acción de la edad, cuando aparezca la flacidez o arrugas cerca de las zonas micropigmentadas. La micropigmentación se aplica mediante un dermógrafo ligero que emplea agujas cortas que se mueven de forma rotatoria, trepidatoria, depositando pigmento justamente debajo del estrato germinativo, en la capa papilar dérmica. Estos aparatos brindan precisión en los detalles finos y facilitan la minuciosidad que es cualidad del Técnico en Micropigmentación quien además es un artista del maquillaje y en especial se considera un visagista. Los Técnicos en Micropigmentación buscarán corregir, simetrizar y armonizar  los ojos, cejas, y labios  de acuerdo a la personalidad del solicitante.  
           </div>
         </li>
 
-<!--    <li>
-          <div class="collapsible-header">
-            <h4>Ventajas en las correcciones de pigmentacion</h4>
-          </div>
-          <div class="collapsible-body">
-            <span>Le damos una solución a su problema, utilizando diferentes técnicas especializadas según su caso, para eliminar por completo su problema de pigmentación. <br><br>  
-            Para este procedimiento es necesario consulta previa para valoración y explicar a detalle del procedimiento a realizar y los cuidados estrictos para una rápida recuperación.</span>
-          </div>
-        </li>        
--->
       </ul>
     </div>
   </div>
