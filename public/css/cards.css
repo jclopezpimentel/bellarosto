@@ -124,6 +124,7 @@ div.card div.card-flap {
 div.card div.flap1 {
   transition: all 0.3s 0.3s ease-out;
   z-index: -1;
+  border: 1px solid #dddddd !important;
 }
 div.card div.flap2 {
   transition: all 0.3s 0s ease-out;
@@ -490,7 +491,7 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #C0392B;
+  background: brown;
   content: "";
   z-index: -2;
   transition: transform .3s;
@@ -516,7 +517,7 @@ height:45px;
 #footer {
 color:white;
 clear:both;
-font-size:10px;
+font-size:11.3px;
 margin:0 0 3px 18vw;
 letter-spacing:.1em;
 left:0px;
@@ -536,7 +537,7 @@ border-radius: 4px;
 a.rss   {
 position:absolute;
 width:1005%;
-height:34%;
+height:10%;
 display:inline-block;
 }
 a.rss:hover  {
@@ -550,7 +551,7 @@ position:absolute;
 width:1050%;
 height:34px;
 display:inline-block;
-margin-left:125px;
+margin-left:205px;
 margin-top:0px;
 }
 a.facebook:hover { opacity:2;
@@ -560,3 +561,19 @@ filter:alpha(opacity=100);}
 a.rss:hover  { opacity:2;
 filter:alpha(opacity=100);
 }
+
+
+nav>li>a:hover {
+    background-color: #43291d !important;
+    color: white !important;
+    opacity: .7;
+    border-radius: 5px;
+}
+
+nav>.active>a, {
+    background-color: #43291d !important;
+    color: white !important;
+    border-radius: 5px;
+}
+
+

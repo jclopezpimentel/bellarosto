@@ -29,6 +29,7 @@ table {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
+  color: #43291d !important;
 }
 
 .section-padding {
@@ -183,13 +184,17 @@ margin-top: -0px;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  color: #43291d;
-  background-color: transparent;
+    background-color: #43291d !important;
+    color: white !important;
+    border-radius: 5px;
+    opacity: 1;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  background-color: transparent;
-  color: #e94150;
+    background-color: #43291d !important;
+    color: white !important;
+    opacity: .7;
+    border-radius: 5px;
 }
 
 .banner-info {

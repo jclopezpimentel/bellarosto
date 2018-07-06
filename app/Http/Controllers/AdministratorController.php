@@ -7,9 +7,19 @@ use App\Administrator;
 use DB;
 use Input;
 use App\Category;
+use App\Image;
 
 class AdministratorController extends Controller
 {
+
+  public function principal(){
+    $categories = Category::all();
+    $images = Image::all();
+
+    return view('welcome',compact('categories','images'));
+
+  }
+
   public function checkUser(Request $request){
 
     $username = $request['username'];
@@ -27,8 +37,9 @@ class AdministratorController extends Controller
 
   public function dashboard(){
     $categories = Category::all();
+    $images = Image::all();
 
-    return view('administrator.dashboard',compact('categories'));
+    return view('administrator.dashboard',compact('categories','images'));
   }
 
   public function saveCategory(Request $request){

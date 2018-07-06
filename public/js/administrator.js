@@ -88,5 +88,32 @@ $(document).ready(function(){
 		});
   });
 
+  $("#uploadImageForm").on('submit', function(event) {
+    event.preventDefault();
 
+    $.ajax({
+      url: "/uploadImage", // Url to which the request is send
+      type: "POST",             // Type of request to be send, called as method
+      headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+      data: new FormData(this), // Data sent to server, a set of key/value pairs (i.e. form fields and values)
+      contentType: false,       // The content type used when sending data to the server.
+      cache: false,             // To unable request pages to be cached
+      processData:false,        // To send DOMDocument or non processed data file it is set to false
+      beforeSend: function( xhr ) {
+        $(".btn").attr('disabled','true');
+      },
+      complete: function(e, xhr, settings){
+        if(e.status === 200){
+          alert('Datos Guardados correctamente.');
+          $("#edit-Images").load(" #edit-Images");
+        }else{
+          alert('No se han podido guardar los cambios.');
+        }
+        $(".btn").removeAttr('disabled');
+      },
+      error: function (textStatus, errorThrown) {
+        alert('No se han podido guardar los cambios.');
+      }
+    });
+  });
 });

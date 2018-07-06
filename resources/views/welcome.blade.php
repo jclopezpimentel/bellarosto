@@ -37,7 +37,7 @@
 
       <div id='footer-wrapper'>
         <div class='footer section' id='footer'>
-          <div id="direccion">
+          <div id="direccion" style="padding-top: 10px;">
             <p>Dirección: Fraccionamiento el Laurel<br>Calle Tule
             Manz. 20 Lote 8 Comitan, Chiapas</p>
           </div>    

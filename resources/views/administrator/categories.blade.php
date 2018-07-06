@@ -11,10 +11,9 @@
                 </button>
               </div><br>
 
-              <table class="table table-hover">
+              <table class="table table-hover table-bordered">
                 <thead class="thead-dark">
                   <tr>
-                    <th style="text-align: center;" scope="col">#</th>
                     <th style="text-align: center;" scope="col">Nombre</th>
                     <th style="text-align: center;" scope="col">Acciones</th>
                   </tr>
@@ -22,7 +21,6 @@
                 <tbody>
                   @foreach ($categories as $category)
                     <tr>
-                      <th align="center" scope="row">{{$category->id}}</th>
                       <td align="center">{{$category->name}}</td>
                       <td align="center">
                         <buton class="deleteCategory btn btn-danger btn-sm"  id="{{$category->id}}">

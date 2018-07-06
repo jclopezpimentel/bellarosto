@@ -1,9 +1,7 @@
 <?php
 
 /*Página Principal */
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'AdministratorController@principal');
 
 /*
 ** Administrador
@@ -29,7 +27,7 @@ Route::post('/checkUser', 'AdministratorController@checkUser');
 */
 
 /*Ruta a la función UploadImage*/
-Route::get('/uploadImage', 'ImageController@uploadImage');
+Route::post('/uploadImage', 'ImageController@uploadImage');
 
 /*Ruta a la función DeleteImage*/
 Route::get('/deleteImage', 'ImageController@deleteImage');
@@ -39,6 +37,8 @@ Route::get('/updateVisibilityImage', 'ImageController@updateVisibilityImage');
 
 /*Ruta a la función updateCategoryImage*/
 Route::get('/updateCategoryImage', 'ImageController@updateCategoryImage');
+
+
 
 
 Route::post('/saveCategory', 'AdministratorController@saveCategory');

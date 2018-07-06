@@ -1,4 +1,4 @@
-<section id="knowMore" class="section-padding wow fadeIn delay-05s">
+<section id="knowMore" class="section-padding wow fadeIn delay-05s" style="display: unset;">
   <header>
     <h2 align="center">Conozca Más</h2>
   </header>
