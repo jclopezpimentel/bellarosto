@@ -13,36 +13,12 @@
     	<div class="carousel carousel-slider center all-categories">
 	    	@foreach ($images as $image) 	
 		    	@if ($image->imageVisibility == "False")
-			    	<a class="carousel-item" href="#one!">
+			    	<a class="carousel-item {{$image->id_categories}}" href="#one!" data-category="{{$image->id_categories}}">
 			    		<img src="/img/{{$image->pathImage}}">
 			    	</a>
     		@endif
  			@endforeach
-
 			</div>
-
-	  	<div class="carousel carousel-slider center first-category">
-		    <a class="carousel-item" href="#one!"><img src="https://t2.uc.ltmcdn.com/images/1/0/9/img_como_descargar_fuentes_de_dafont_25901_600.jpg"></a>
-		    <a class="carousel-item" href="#two!"><img src="https://www.dafont.com/img/illustration/b/e/beautify_script.png"></a>
-		    <a class="carousel-item" href="#four!"><img src="https://www.dafont.com/img/illustration/m/o/mochary.png"></a>
-		</div>
-
-		<div class="carousel carousel-slider center second-category">
-		    <a class="carousel-item" href="#three!"><img src="https://www.dafont.com/img/illustration/l/a/la_cithare.png"></a>
-		    <a class="carousel-item" href="#four!"><img src="https://www.dafont.com/img/illustration/m/o/mochary.png"></a>
-		</div>
-
-		<div class="carousel carousel-slider center three-category">
-		    <a class="carousel-item" href="#one!"><img src="https://t2.uc.ltmcdn.com/images/1/0/9/img_como_descargar_fuentes_de_dafont_25901_600.jpg"></a>
-		    <a class="carousel-item" href="#two!"><img src="https://www.dafont.com/img/illustration/b/e/beautify_script.png"></a>
-		</div>
-
-		<div class="carousel carousel-slider center fourth-category">
-		    <a class="carousel-item" href="#one!"><img src="https://t2.uc.ltmcdn.com/images/1/0/9/img_como_descargar_fuentes_de_dafont_25901_600.jpg"></a>
-		    <a class="carousel-item" href="#two!"><img src="https://www.dafont.com/img/illustration/b/e/beautify_script.png"></a>
-		    <a class="carousel-item" href="#three!"><img src="https://www.dafont.com/img/illustration/l/a/la_cithare.png"></a>
-		    <a class="carousel-item" href="#four!"><img src="https://www.dafont.com/img/illustration/m/o/mochary.png"></a>
-		</div>
     </div>
 
 		<center>

@@ -25,7 +25,33 @@ class ImageController extends Controller{
 			$datos->save();
     		return "Success";
     	}else{
-    		return "alskdjs";
+    		return "Fail request";
     	}
+    }
+
+    public function deleteImage(Request $request){
+        $idImage = $request['idImage'];
+
+        $image = Image::findOrFail($idImage);
+        
+        $image->delete();
+
+        return "Success";
+    }
+
+    public function updateVisibilityImage(Request $request){
+        $idImage = $request['idImage'];
+        $imageVisibility = Image::where('id',$idImage)->pluck('imageVisibility')[0];
+        $image = Image::findOrFail($idImage);
+ 
+        if ($imageVisibility == 'False') {
+            $image->imageVisibility ='True';
+            $image->save();
+        }else{
+            $image->imageVisibility ='False';
+            $image->save();
+        }        
+
+        return $imageVisibility;
     }
 }

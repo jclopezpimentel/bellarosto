@@ -16,8 +16,9 @@ class AdministratorController extends Controller
     $categories = Category::all();
     $images = Image::all();
 
-    return view('welcome',compact('categories','images'));
+    $idCategories = Category::pluck('id');
 
+    return view('welcome',compact('categories','images','idCategories'));
   }
 
   public function checkUser(Request $request){
@@ -32,7 +33,6 @@ class AdministratorController extends Controller
     }
 
     return $i;
-
   }
 
   public function dashboard(){
@@ -50,7 +50,6 @@ class AdministratorController extends Controller
     $category->save();
 
     return "success";
-
   }
 
   public function deleteCategory(Request $request){
@@ -62,4 +61,5 @@ class AdministratorController extends Controller
 
     return "Success";
   }
+
 }

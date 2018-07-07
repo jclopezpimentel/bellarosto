@@ -1,29 +1,31 @@
 <!-- Navbar -->
-<nav class="navbar nav navbar-nav navbar-expand-lg bg-primary fixed-top" color-on-scroll="400"  role="tablist">
+<nav class="navbar nav navbar-nav navbar-expand-lg bg-primary fixed-top" color-on-scroll="400">
   <div class="container">
     <div class="dropdown button-dropdown" style="left: 97%">
-      <a class="navbar-brand dropdown-toggle" href="{{ url('/logout') }}" style="font-size: 15.5px;font-weight: 550;">
+      <a class="navbar-brand nav-link dropdown-toggle" href="{{ url('/logout') }}" style="font-size: 15.5px;font-weight: 550;">
        <i class="now-ui-icons media-1_button-power"></i> SALIR
       </a>
     </div>
-    <li class="nav-item" style="margin-right: 40px;">
-      <a class="nav-link" style="white-space: nowrap;" href="#add-Image" data-toggle="tab" role="tablist">
-        <i class="now-ui-icons design_image"></i>
-        <p>Subir Imágenes</p>
-      </a>
-    </li>
-    <li class="nav-item" style="margin-right: 40px;">
-      <a class="nav-link" style="white-space: nowrap;" href="#categories" data-toggle="tab" role="tablist">
-        <i class=" now-ui-icons design_bullet-list-67"></i>
-        <p>Categorías</p>
-      </a>
-    </li>
-    <li class="nav-item" style="margin-right: 40px;">
-        <a class="nav-link" style="white-space: nowrap;" href="#edit-Images" data-toggle="tab" role="tablist">
-            <i class=" now-ui-icons ui-2_settings-90"></i>
-            <p>Editar Imágenes</p>
-        </a>
-    </li>
+      <ul class="nav navbar-nav button-dropdown" role="tablist" style="width: 100%">
+        <li class="nav-item">
+            <a class="navbar-brand nav-link active" data-toggle="tab" href="#add-Image" role="tablist">
+                <i class=" now-ui-icons design_image"></i>
+                <p class="">Subir Imágenes</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="navbar-brand nav-link" data-toggle="tab" href="#categories" role="tablist">
+                <i class=" now-ui-icons design_bullet-list-67"></i>
+                <p class="">Categorías</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="navbar-brand nav-link" data-toggle="tab" href="#edit-Images" role="tablist">
+                <i class=" now-ui-icons ui-2_settings-90"></i>
+                <p class="">Editar Imágenes</p>
+            </a>
+        </li>
+      </ul>
     <div class="navbar-translate">
       <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-bar bar1"></span>
@@ -34,19 +36,19 @@
     <div class="collapse navbar-collapse justify-content-end" id="navigation">
       <ul class="nav navbar-nav" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#add-Image" role="tablist">
+            <a class="nav-link active d-lg-none d-xl-none" data-toggle="tab" href="#add-Image" role="tablist">
                 <i class="d-lg-none d-xl-none now-ui-icons design_image"></i>
                 <p class="d-lg-none d-xl-none">Subir Imágenes</p>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#categories" role="tablist">
+            <a class="nav-link d-lg-none d-xl-none" data-toggle="tab" href="#categories" role="tablist">
                 <i class="d-lg-none d-xl-none now-ui-icons design_bullet-list-67"></i>
                 <p class="d-lg-none d-xl-none">Categorías</p>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#edit-Images" role="tablist">
+            <a class="nav-link d-lg-none d-xl-none" data-toggle="tab" href="#edit-Images" role="tablist">
                 <i class="d-lg-none d-xl-none now-ui-icons ui-2_settings-90"></i>
                 <p class="d-lg-none d-xl-none">Editar Imágenes</p>
             </a>

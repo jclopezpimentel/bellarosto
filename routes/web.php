@@ -30,10 +30,10 @@ Route::post('/checkUser', 'AdministratorController@checkUser');
 Route::post('/uploadImage', 'ImageController@uploadImage');
 
 /*Ruta a la función DeleteImage*/
-Route::get('/deleteImage', 'ImageController@deleteImage');
+Route::post('/deleteImage', 'ImageController@deleteImage');
 
 /*Ruta a la función updateVisibilityImage*/
-Route::get('/updateVisibilityImage', 'ImageController@updateVisibilityImage');
+Route::post('/updateVisibilityImage', 'ImageController@updateVisibilityImage');
 
 /*Ruta a la función updateCategoryImage*/
 Route::get('/updateCategoryImage', 'ImageController@updateCategoryImage');

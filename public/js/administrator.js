@@ -116,4 +116,56 @@ $(document).ready(function(){
       }
     });
   });
+
+  $("#edit-Images").on('click', '.deleteImage', function(event) {
+    event.preventDefault();
+
+    idImage = $(this).attr('id');
+
+    $.ajax({
+      url: '/deleteImage',
+      headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+      type: 'POST',
+      dataType: 'json',
+      data: {idImage: idImage},
+      beforeSend: function( xhr ) {
+        $(".btn").attr('disabled','true');
+      },
+    })
+    .always(function(e) {
+      if (e.status === 200){
+        alert('Eliminado Exitosamente');  
+        $("#edit-Images").load(" #edit-Images");
+      }else{
+        alert('No se ha podido eliminar');  
+      }
+      $(".btn").removeAttr('disabled');
+    });
+  });
+
+  $("#edit-Images").on('click', '.updateVisibilityImage', function(event) {
+    event.preventDefault();
+
+    idImage = $(this).attr('id');
+
+    $.ajax({
+      url: '/updateVisibilityImage',
+      headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+      type: 'POST',
+      dataType: 'json',
+      data: {idImage: idImage},
+      beforeSend: function( xhr ) {
+        $(".btn").attr('disabled','true');
+      },
+    })
+    .always(function(e) {
+      if (e.status === 200){
+        alert('Actualizado Exitosamente');  
+        $("#edit-Images").load(" #edit-Images");
+      }else{
+        alert('No se ha podido actualizar');  
+      }
+      $(".btn").removeAttr('disabled');
+    });
+  });
 });

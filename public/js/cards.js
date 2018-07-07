@@ -74,37 +74,35 @@ $(document).ready(function(){
     indicators: true,
     dist : 0
   }
+
   var instance = M.Carousel.init(elem,options);
-   $('.first-category, .second-category, .three-category, .fourth-category').hide();
   autoplay();
 
   function autoplay(){
-    $('.carousel').carousel('next');
-    setTimeout(autoplay, 3000); 
+    
+    var ocultos = $("a").hasClass(".hidden");
+
+    if (ocultos){
+      $('.carousel').carousel('next', 1);
+      setTimeout(autoplay,1);
+    }else {
+      $('.carousel').carousel('next');
+      setTimeout(autoplay, 3000); 
+    }
+
+    console.log(ocultos);
   }
 
-  function hideAll(){
-    $('.all-categories, .first-category, .second-category, .three-category, .fourth-category').hide();
-  };
+  $(".buttons-large").on('click', '.flat-button', function(event) {
+    event.preventDefault();
 
-  $("#first").click(function(event) {
-    hideAll();
-    $(".first-category").show();
-  });
+    var idCategory = $(this).attr('id');
+  
+    $(".carousel-item").addClass('hidden');
+    $( "."+idCategory ).removeClass('hidden');
 
-  $("#second").click(function(event) {
-    hideAll();
-    $(".second-category").show();
-  });
 
-  $("#three").click(function(event) {
-    hideAll();
-    $(".three-category").show();
-  });
 
-  $("#fourth").click(function(event) {
-    hideAll();
-    $(".fourth-category").show();
   });
 
 

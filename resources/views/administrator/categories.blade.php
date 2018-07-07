@@ -5,8 +5,7 @@
               <h2 align="center">Categorías</h2>
 
               <div class="row col-md-12">
-                <div class="col-md-9"></div>
-                <button class="btn btn-success btn-md" data-toggle="modal" data-target="#categoryModal">
+                <button class="btn btn-success btn-md" style="margin:0 auto;display:block;" data-toggle="modal" data-target="#categoryModal">
                   <i class="now-ui-icons ui-1_simple-add"> </i> Agregar 
                 </button>
               </div><br>

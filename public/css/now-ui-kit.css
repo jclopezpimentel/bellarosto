@@ -64,11 +64,12 @@ label[for="image"] {
     background-color: white !important;
     border-radius: 4px;
 }
-body{
-    background: #ECE9E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.col-sm{
+    max-width: 33.1%;
+}
 
+body{
+    background-color: #eef0f4;
 }
 
 .bootstrap-switch {
@@ -6035,6 +6036,10 @@ Created using IcoMoon - icomoon.io
 }
 
 @media screen and (max-width: 991px) {
+    .col-sm{
+        margin-left: 8.33333333%;
+        max-width: 50% !important;
+    }
     .sidebar-collapse .navbar-collapse {
         position: fixed;
         display: block;
