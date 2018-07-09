@@ -21,7 +21,7 @@
             </label> 
           </div><br>                    
           
-          <div class="row col-md-12">
+          <div class="row col-md-12 imageCategory">
             <div class="col-md-1"></div>
             <label for="imageCategory" class="col-md-2">Categoría</label>
             <select class="form-control col-md-5" id="imageCategory" name="id_categories" style="background-color: white;">

@@ -35,22 +35,23 @@
 
       @include('sections.contactme')
 
-      <div id='footer-wrapper'>
-        <div class='footer section' id='footer'>
-          <div id="direccion" style="padding-top: 10px;">
-            <p>Dirección: Fraccionamiento el Laurel<br>Calle Tule
+      <div class="row container" id="footer">
+        <div class="col-md-6 text-center">
+          <p>Dirección: Fraccionamiento el Laurel<br>Calle Tule
             Manz. 20 Lote 8 Comitan, Chiapas</p>
-          </div>    
-          <div class="redes">
-            <a class="rss" target="_blank">
-              <img src="https://png.icons8.com/color/500/whatsapp.png" width="35px" /><br><p style="margin: 0 0 10px -20px;">+52 963 122 7005</p>
-            </a>
-            <a class="facebook" href="https://www.facebook.com/pages/Clinica-Magally-Delineados-Permanetes/328214608337" target="_blank">
-              <img src="/img/social-facebook-icon.png" width="35px"/><br><p style="margin: 0 0 10px -40px;word-wrap: break-word;">/Clinica-Magally-Delineados-Permanetes</p>
-            </a>            
           </div>
+        <div class="col-md-3 text-center">
+          <a target="_blank">
+            <img src="https://png.icons8.com/color/500/whatsapp.png" width="35px" /><br><p>+52 963 122 7005</p>
+          </a>
         </div>
-      </div>      
+        <div class="col-md-3 text-center">
+          <a href="https://www.facebook.com/pages/Clinica-Magally-Delineados-Permanetes/328214608337" target="_blank">
+            <img src="/img/social-facebook-icon.png" width="35px"/><br><p>/Clinica-Magally-Delineados-Permanetes</p>
+          </a>    
+        </div>
+      </div>   
+      
     </div>
   </body>
   <script src="/js/app.js"></script>

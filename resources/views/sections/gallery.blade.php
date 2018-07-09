@@ -2,14 +2,17 @@
   <header>
     <h2 align="center">Galería</h2>
   </header>
-  <div class="row">
-  	<div class="col-md-3 buttons-large">
-  		@foreach ($categories as $category)
-	  		<div id="{{$category->id}}" class="flat-button">{{$category->name}}</div><br>
-  		@endforeach
-  	</div>
+  <div class="container row">
+  	<div class="col-md-3">
+      <select class="form-control" id="imageCategory" name="id_categories" style="background-color: white !important">
+          <option value="N/A" selected disabled>Selecione una categoría</option> 
+        @foreach ($categories as $category)
+          <option value="{{$category->id}}">{{$category->name}}</option>
+        @endforeach
+      </select> 	
+  	</div><br><br>
 
-    <div class="col-md-9 responsive-img " >
+    <div class="col-md-offset-1 col-md-7" >
     	<div class="carousel carousel-slider center all-categories">
 	    	@foreach ($images as $image) 	
 		    	@if ($image->imageVisibility == "False")
@@ -20,14 +23,6 @@
  			@endforeach
 			</div>
     </div>
-
-		<center>
-			<div class="col-md-3 buttons-small" style="display: none;">
-		  		@foreach ($categories as $category)
-			  		<div id="{{$category->id}}}" class="flat-button">{{$category->name}}</div><br>
-		  		@endforeach			
-			</div>			
-		</center>
    
   </div>
 </section>  

@@ -56,6 +56,7 @@ $(document).ready(function(){
 	  			alert('Guardado Exitosamente');	
 	  			$("#categoryModal").modal('hide');
 	  			$("#categories").load(" #categories");
+          $(".imageCategory").load(" .imageCategory");
   			}else{
 	  			alert('No se ha podido guardar');	
   			}

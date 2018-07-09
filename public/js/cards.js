@@ -80,7 +80,7 @@ $(document).ready(function(){
 
   function autoplay(){
     
-    var ocultos = $("a").hasClass(".hidden");
+    var ocultos = $(".carousel-item").hasClass(".hidden");
 
     if (ocultos){
       $('.carousel').carousel('next', 1);
@@ -89,24 +89,20 @@ $(document).ready(function(){
       $('.carousel').carousel('next');
       setTimeout(autoplay, 3000); 
     }
-
-    console.log(ocultos);
   }
 
-  $(".buttons-large").on('click', '.flat-button', function(event) {
+
+  $("#gallery").on('change', '#imageCategory', function() {
     event.preventDefault();
 
-    var idCategory = $(this).attr('id');
-  
+    var idCategory = $(this).val();
+
     $(".carousel-item").addClass('hidden');
     $( "."+idCategory ).removeClass('hidden');
-
-
-
   });
 
 
-    $('.collapsible').collapsible();
+  $('.collapsible').collapsible();
 
 });
 
