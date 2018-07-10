@@ -24,7 +24,7 @@
       </nav>
     </header>
     <div class="wrapper">
-      <div class="container">
+      <div style="margin-right: 4vw;margin-left: 4vw;">
         <div class="row">
           <div class="banner-info text-center wow fadeIn delay-05s">
             <h2 class="bnr-sub-title">Artist Brow Magally Pimentel</h2>
@@ -38,7 +38,6 @@
               Micropigmentación Avanzada que te ayudará  a mejorar perfeccionar tus cejas, párpados, labios,  o trabajos mal hechos; 
               corrigiendo tanto en diseño, simetría y color para que siempre estés súper hermosa.
             </p>
-
             <div class="overlay-detail">
               <a href="#service"><i class="fa fa-angle-down"></i></a>
             </div>

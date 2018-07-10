@@ -39,6 +39,8 @@ class AdministratorController extends Controller
     $categories = Category::all();
     $images = Image::all();
 
+//    $images = Image::with('category')->get();
+
     return view('administrator.dashboard',compact('categories','images'));
   }
 
