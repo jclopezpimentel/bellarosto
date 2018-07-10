@@ -8,7 +8,7 @@
               <img src="/img/{{$image->pathImage}}" alt="" class="card-img-top" width="290px" height="250px">
               <div class="card-body">
                 <h5 class="card-title">{{$image->imageName}}</h5>
-                <p class="card-text">Categoría: {{ \App\Category::where(['id' => $image->id_categories])->pluck('name')[0] }}</p>
+                <p class="card-text">Categoría: {{ \App\Category::where(['id' => $image->id_categories])->pluck('name')->first() }}</p>
                 <p>Status: {{$image->imageVisibility == 'False' ? 'Visible': 'No visible'}}</p>
                 <buton class="deleteImage btn btn-danger btn-sm"  id="{{$image->id}}">
                   <i class="now-ui-icons ui-1_simple-remove"></i> Remove 

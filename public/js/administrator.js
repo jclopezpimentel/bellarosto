@@ -80,12 +80,13 @@ $(document).ready(function(){
   		data: {idCategory: idCategory},
   	})
 		.always(function(e) {
-			if (e.status === 200){
+			if (e == '1'){
   			alert('Eliminado Exitosamente');	
   			$("#categories").load(" #categories");
 			}else{
-  			alert('No se ha podido eliminar');	
+  			alert('No se ha podido eliminar, la categoría contiene imagenes');	
 			}
+      console.log(e);
 		});
   });
 

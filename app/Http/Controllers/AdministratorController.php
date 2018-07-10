@@ -58,10 +58,14 @@ class AdministratorController extends Controller
     $idCategory = $request['idCategory'];
 
     $Category = Category::findOrFail($idCategory);
-    
+
+    $checkImages = Image::where('id_categories',$idCategory)->exists(); 
+    if ($checkImages){
+      return "Fail";
+    }
     $Category->delete();
 
-    return "Success";
+    return "1";
   }
 
 }

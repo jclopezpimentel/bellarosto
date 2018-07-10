@@ -5,7 +5,7 @@
   <div class="container">
   	<div class="row col-md-12">
 	  	<div class=" col-md-offset-5 col-md-3 ">
-	      <select class="form-control" id="imageCategory" name="id_categories" style="background-color: white !important">
+	      <select class="form-control" id="imageCategory" name="id_categories" style="background-color: white !important;border-color: #43291d;color: #43291d !important; ">
 	          <option value="N/A" selected disabled>Selecione una categoría</option> 
 	          <option value="initial">Todas las categorías</option>
 	        @foreach ($categories as $category)

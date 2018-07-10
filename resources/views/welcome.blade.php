@@ -40,15 +40,22 @@
           <p>Dirección: Fraccionamiento el Laurel<br>Calle Tule
             Manz. 20 Lote 8 Comitan, Chiapas</p>
           </div>
-        <div class="col-md-3 text-center">
+        <div class="col-md-2 text-center">
           <a target="_blank">
-            <img src="https://png.icons8.com/color/500/whatsapp.png" width="35px" /><br><p>+52 963 122 7005</p>
+            <img src="https://png.icons8.com/color/500/whatsapp.png" width="35px" /><br><p> 963 122 7005</p>
           </a>
         </div>
-        <div class="col-md-3 text-center">
-          <a href="https://www.facebook.com/pages/Clinica-Magally-Delineados-Permanetes/328214608337" target="_blank">
-            <img src="/img/social-facebook-icon.png" width="35px"/><br><p>/Clinica-Magally-Delineados-Permanetes</p>
-          </a>    
+        <div class="col-md-2 text-center">
+          <a href="https://www.facebook.com/pages/BelaRostroMicropigmentacion" target="_blank">
+            <img src="/img/social-facebook-icon.png" width="35px" style="position: static;"/><br>
+             Bela Rostro Micropigmetacion<br><br>
+          </a>         
+        </div>
+        <div class="col-md-2 text-center">
+          <a href="https://www.facebook.com/pages/MagallyPimentel" target="_blank">
+            <img src="/img/social-facebook-icon.png" width="35px" style="position: static;"/><br>
+            Magally Pimentel<br><br>
+          </a>               
         </div>
       </div>   
       

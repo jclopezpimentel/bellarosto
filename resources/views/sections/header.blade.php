@@ -16,7 +16,8 @@
               <li class="active"><a href="#main-header">Inicio</a></li>
               <li class=""><a href="#service">Servicios</a></li>
               <li class=""><a href="#knowMore">Conozca Más</a></li>
-              <li class=""><a href="#gallery">Galería</a></li>              
+              <li class=""><a href="#gallery">Galería</a></li>     
+              <li class="chat-wrap"><a href="#">Contáctanos</a></li>         
               <li><a href="{{ url('/login') }}">Login</a></li>              
             </ul>
           </div>

@@ -219,7 +219,7 @@ ul {
 .main-blue{ color:#00fcfa;}
 .dark-blue{ color:#0f424a;}
 
-.chat-wrap, .logo-certificacion {
+.logo-certificacion {
   position: fixed;
   width: 125px;
   height: 150px;
@@ -329,7 +329,7 @@ ul {
 
 .contactme.active {
   border-radius:10px;
-  height: 68%;
+  height: 86%;
   width: 27%;
   transform:translateY(0);
   -webkit-transform:translateY(0);
