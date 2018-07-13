@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
   <!-- Styles -->
   <link rel="stylesheet" href="/css/core/bootstrap.min.css">    
-  <link href="/css/now-ui-kit.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/now-ui-kit.css" />
+  <link rel="stylesheet" href="/css/alertify.css">
+  <link rel="stylesheet" href="/css/semantic.min.css">
   <style>
     label{
       margin-top: .5rem;
@@ -21,7 +23,9 @@
     <!--   Core JS Files   -->
   <script src="/js/app.js"></script>
   <script src="/js/now-ui-kit.js"></script>
+  <script src="/js/alertify.min.js"></script> 
   <script src="/js/administrator.js"></script>
+
 </head>
 
 	@yield('content')
