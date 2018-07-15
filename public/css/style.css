@@ -120,9 +120,8 @@ background: linear-gradient(94deg, rgb(250, 253, 255), rgb(255, 110, 127));
 
 .bg-color {
   min-height: 650px;
+  height: 100%;
 }
-
-#main-header {}
 
 .navbar-default {
   background-color: transparent;
@@ -137,7 +136,7 @@ background: linear-gradient(94deg, rgb(250, 253, 255), rgb(255, 110, 127));
 	}
 }
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-  color: ##43291d;
+  color: #43291d;
 }
 
 .top-nav-collapse {
