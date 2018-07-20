@@ -27,8 +27,6 @@ $(document).ready(function(){
 		var filename = jQuery(this).val().split('\\').pop();
 		var idname = jQuery(this).attr('id');
 		console.log(jQuery(this));
-		console.log(filename);
-		console.log(idname);
 		jQuery('span.'+idname).next().find('span').html(filename);
   });
 
@@ -59,7 +57,7 @@ $(document).ready(function(){
   			}else{
 	  			alertify.error('No se ha podido guardar');	
   			}
-
+        $(".btn").removeAttr('disabled');
   		});
   	}else {
   		alertify.warning('Escriba algo');
@@ -89,6 +87,7 @@ $(document).ready(function(){
 			}else{
   			alertify.warning('No se ha podido eliminar, la categoría contiene imagenes');	
 			}
+      $(".btn").removeAttr('disabled');
 		});
   });
 
@@ -108,16 +107,17 @@ $(document).ready(function(){
         alertify.message('Subiendo imágen...');
       },
       complete: function(e, xhr, settings){
-        if(e.status === 200){
+        if(e == "Success"){
           alertify.success('Datos Guardados correctamente.');
           $("#edit-Images").load(" #edit-Images");
         }else{
-          alertify.error('No se han podido guardar los cambios.');
+          alertify.error(e.responseText);
         }
         $(".btn").removeAttr('disabled');
       },
       error: function (textStatus, errorThrown) {
-        alertify.error('No se han podido guardar los cambios.');
+        alertify.error('No se han podido guardar los cambios. '+textStatus);
+        $(".btn").removeAttr('disabled');
       }
     });
   });

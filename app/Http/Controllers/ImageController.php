@@ -7,26 +7,39 @@ use App\Image;
 
 class ImageController extends Controller{
     public function uploadImage(Request $request){
-    	if ($request->hasFile('pathImage')) {
-    		$file = $request->file('pathImage');
-    		$name = time().$file->getClientOriginalName();
-    		$file->move(public_path().'/img/', $name);
-    		$imageVisibility = $request->imageVisibility;
-    		
-            if (is_null($imageVisibility)) {
-    			$imageVisibility = "True";
-    		}
+        $type = $request->pathImage->extension();
+        $size = ($request->pathImage->getClientSize()) / 1024;
+        $isValid = $request->pathImage->isValid();
 
-	    	$datos = new Image;
-			$datos->imageName = $request->imageName;
-			$datos->pathImage = $name;
-			$datos->imageVisibility = $imageVisibility;
-			$datos->id_categories = $request->id_categories;
-			$datos->save();
-    		return "Success";
-    	}else{
-    		return "Fail request";
+    	if ($request->hasFile('pathImage') && $isValid ) {
+            if ($type == "png" ||  $type == "jpeg" ||  $type == "jpe" ||  $type == "jpg" ||  $type == "gif"){
+                if ($size <= 5120) {
+                    $file = $request->file('pathImage');
+                    $name = time().$file->getClientOriginalName();
+                    $file->move(public_path().'/img/', $name);
+                    $imageVisibility = $request->imageVisibility;
+                    
+                    if (is_null($imageVisibility)) {
+                        $imageVisibility = "True";
+                    }
+
+                    $datos = new Image;
+                    $datos->imageName = $request->imageName;
+                    $datos->pathImage = $name;
+                    $datos->imageVisibility = $imageVisibility;
+                    $datos->id_categories = $request->id_categories;
+                    $datos->save();
+                    return "Success";
+                }else{
+                    return "Tamaño Sobrepasado ".$size ;
+                }
+            }else{
+                return "Tipo de archivo no válido " .$type;
+            }
+     	}else{
+    		return "Fail request" .$isValid;
     	}
+        return $size;
     }
 
     public function deleteImage(Request $request){
