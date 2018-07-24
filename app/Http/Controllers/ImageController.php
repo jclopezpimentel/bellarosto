@@ -67,4 +67,14 @@ class ImageController extends Controller{
 
         return $imageVisibility;
     }
+
+    public function carouselCategory(Request $request){
+        $idCategory = $request->idCategory;
+        if ($idCategory == '0') {
+            $images = Image::where('imageVisibility','False')->get();
+        }else{
+            $images = Image::where('id_categories',$idCategory)->get();
+        }
+        return view('sections.carousel',compact('images'));
+    }
 }

@@ -78,15 +78,12 @@ $(document).ready(function(){
   autoplay();
 
   function autoplay(){
-    
-    var ocultos = $(".carousel-item").hasClass(".hidden");
-
-    if (ocultos){
-      $('.carousel').carousel('next', 1);
-      setTimeout(autoplay,1);
+    var sliders = $("#all-categories > .carousel-item").length;
+    if ( sliders <= 1) {
+      //#NOthing
     }else {
       $('.carousel').carousel('next');
-      setTimeout(autoplay, 3000); 
+      setTimeout(autoplay, 3000);     
     }
   }
 
@@ -96,10 +93,29 @@ $(document).ready(function(){
 
     var idCategory = $(this).val();
 
-    $(".carousel-item").addClass('hidden');
-    $( "."+idCategory ).removeClass('hidden');
+    $.ajax({
+      url: '/carouselCategory',
+      type: 'POST',
+      headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+      data: {idCategory: idCategory}
+    })
+    .done(function(e) {
+      $("#container-carousel").html(e);
+      var elem = document.querySelectorAll('.carousel');
+      var options = {
+        indicators: true,
+        dist : 0
+      }
+      var instance = M.Carousel.init(elem,options);
+      autoplay();
+    })
+    .fail(function(e){
+      console.log("error");
+    })
+    .always(function(e){
+      console.log(e);
+    });
   });
-
 
   $('.collapsible').collapsible();
 

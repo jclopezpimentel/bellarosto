@@ -107,7 +107,7 @@ $(document).ready(function(){
         alertify.message('Subiendo imágen...');
       },
       complete: function(e, xhr, settings){
-        if(e == "Success"){
+        if(e.responseText == "Success"){
           alertify.success('Datos Guardados correctamente.');
           $("#edit-Images").load(" #edit-Images");
         }else{

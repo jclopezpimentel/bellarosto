@@ -38,7 +38,7 @@ Route::post('/updateVisibilityImage', 'ImageController@updateVisibilityImage');
 /*Ruta a la función updateCategoryImage*/
 Route::get('/updateCategoryImage', 'ImageController@updateCategoryImage');
 
-
+Route::post('/carouselCategory', 'ImageController@carouselCategory');
 
 
 Route::post('/saveCategory', 'AdministratorController@saveCategory');
