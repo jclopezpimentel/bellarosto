@@ -175,4 +175,14 @@ $(document).ready(function(){
       $(".btn").removeAttr('disabled');
     });
   });
+
+  $(".mobile-item").on('click', function(event) {
+    event.preventDefault();
+    $("html").removeClass('nav-open');
+    $("#bodyClick").remove();
+    nowuiKit.misc.navbar_menu_visible = 0;
+    setTimeout(function() {
+      $toggle.removeClass('toggled');
+    }, 550);
+  });
 });

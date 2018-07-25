@@ -4,7 +4,7 @@
   </header>
   <div class="cards">
     <div class="card">
-      <img src="/img/delineado.jpg">
+      <img src="/img/micropigmentacion.jpg">
       <div class="card-title">
         <a href="#" class="toggle-info btn">
           <span class="left"></span>

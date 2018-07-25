@@ -48,7 +48,7 @@
         <div class="col-md-2 text-center">
           <a href="https://www.facebook.com/pages/BelaRostroMicropigmentacion" target="_blank">
             <img src="/img/social-facebook-icon.png" width="35px" style="position: static;"/><br>
-             Bela Rostro Micropigmetacion<br><br>
+             Bela Rosto Micropigmentacion<br><br>
           </a>         
         </div>
         <div class="col-md-2 text-center">

@@ -27,7 +27,7 @@
         </li>
       </ul>
     <div class="navbar-translate">
-      <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-bar bar1"></span>
         <span class="navbar-toggler-bar bar2"></span>
         <span class="navbar-toggler-bar bar3"></span>
@@ -35,19 +35,19 @@
     </div>
     <div class="collapse navbar-collapse justify-content-end" id="navigation">
       <ul class="nav navbar-nav" role="tablist">
-        <li class="nav-item">
+        <li class="nav-item mobile-item">
             <a class="nav-link active d-lg-none d-xl-none" data-toggle="tab" href="#add-Image" role="tablist">
                 <i class="d-lg-none d-xl-none now-ui-icons design_image"></i>
                 <p class="d-lg-none d-xl-none">Subir Imágenes</p>
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mobile-item">
             <a class="nav-link d-lg-none d-xl-none" data-toggle="tab" href="#categories" role="tablist">
                 <i class="d-lg-none d-xl-none now-ui-icons design_bullet-list-67"></i>
                 <p class="d-lg-none d-xl-none">Categorías</p>
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mobile-item">
             <a class="nav-link d-lg-none d-xl-none" data-toggle="tab" href="#edit-Images" role="tablist">
                 <i class="d-lg-none d-xl-none now-ui-icons ui-2_settings-90"></i>
                 <p class="d-lg-none d-xl-none">Editar Imágenes</p>
