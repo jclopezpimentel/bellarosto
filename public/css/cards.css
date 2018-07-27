@@ -2,7 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600italic,600,700,700italic,400italic,300italic,300);
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,700,600,500);
 body {
-  background: #fffaf0;
+  background: #ff6e7f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(94deg, #f9f7c5, #FF298E);
+  background: linear-gradient(94deg, #f9f7c5, #FF298E);
   color: #4f585e;
   font-family: 'Source Sans Pro', sans-serif;
   text-rendering: optimizeLegibility;
@@ -529,5 +531,3 @@ nav>.active>a, {
     color: white !important;
     border-radius: 5px;
 }
-
-

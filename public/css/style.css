@@ -111,8 +111,8 @@ HEADER
 
 .header {
 background: #ff6e7f;  /* fallback for old browsers */
-background: -webkit-linear-gradient(94deg, rgb(250, 253, 255), rgb(255, 110, 127));
-background: linear-gradient(94deg, rgb(250, 253, 255), rgb(255, 110, 127));
+background: -webkit-linear-gradient(94deg, #FFFCDE, #FF298E);
+background: linear-gradient(94deg, #FFFCDE, #FF298E);
   background-size: cover;
   min-height: 650px;
   position: relative;
@@ -131,9 +131,9 @@ background: linear-gradient(94deg, rgb(250, 253, 255), rgb(255, 110, 127));
 }
 
 @media (max-width: 768px) {
-	.navbar-default {
-		background: rgba(64, 75, 97, 0.9);
-	}
+  .navbar-default {
+    background: rgba(64, 75, 97, 0.9);
+  }
 }
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
   color: #43291d;
@@ -142,10 +142,9 @@ background: linear-gradient(94deg, rgb(250, 253, 255), rgb(255, 110, 127));
 .top-nav-collapse {
   padding: 0;
   background: #ff6e7f;  /* fallback for old browsers */
-
-background: -webkit-linear-gradient(94deg, rgb(250, 253, 255), rgb(255, 110, 127));
-background: linear-gradient(94deg, rgb(250, 253, 255), rgb(255, 110, 127));
-opacity: .97;
+  background: -webkit-linear-gradient(94deg, #FFFCDE, #FF298E); 
+  background: linear-gradient(94deg, #FFFCDE, #FF298E);
+  opacity: .97;
 }
 
 .logo-dec {
@@ -316,7 +315,7 @@ features
 }
 
 #service {
-  background-color: #f9f7c5;
+  background-color: #FFFCDE;
 }
 
 ul.service-list li i {
@@ -489,7 +488,7 @@ TESTIMONIAL
 ***********************************/
 
 #gallery{
-  background-color: #f9f7c5;
+  background-color: #FFFCDE;
 }
 
 #testimonial {

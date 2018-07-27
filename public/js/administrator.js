@@ -24,71 +24,71 @@ $(document).ready(function(){
   });
 
   jQuery('input[type=file]').change(function(){
-		var filename = jQuery(this).val().split('\\').pop();
-		var idname = jQuery(this).attr('id');
-		console.log(jQuery(this));
-		jQuery('span.'+idname).next().find('span').html(filename);
+    var filename = jQuery(this).val().split('\\').pop();
+    var idname = jQuery(this).attr('id');
+    console.log(jQuery(this));
+    jQuery('span.'+idname).next().find('span').html(filename);
   });
 
   $("#formSaveCategory").on('submit', function(event) {
-  	event.preventDefault();
+    event.preventDefault();
 
-  	var categoryName = $('#nameCategory').prop('value');
+    var categoryName = $('#nameCategory').prop('value');
 
-  	if (categoryName != null && categoryName.length > 0){
+    if (categoryName != null && categoryName.length > 0){
 
-  		$.ajax({
-  			url: '/saveCategory',
-  			type: 'POST',
-	      headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
-  			dataType: 'json',
-  			data: {categoryName: categoryName},
+      $.ajax({
+        url: '/saveCategory',
+        type: 'POST',
+        headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+        dataType: 'json',
+        data: {categoryName: categoryName},
         beforeSend: function( xhr ) {
           $(".btn").attr('disabled','true');
           alertify.message('Guardando categoría...');
         }
-  		})
-  		.always(function(e) {
-  			if (e.status === 200){
-	  			alertify.success('Guardado Exitosamente');	
-	  			$("#categoryModal").modal('hide');
-	  			$("#categories").load(" #categories");
+      })
+      .always(function(e) {
+        if (e.status === 200){
+          alertify.success('Guardado Exitosamente');  
+          $("#categoryModal").modal('hide');
+          $("#categories").load(" #categories");
           $(".imageCategory").load(" .imageCategory");
-  			}else{
-	  			alertify.error('No se ha podido guardar');	
-  			}
+        }else{
+          alertify.error('No se ha podido guardar');  
+        }
         $(".btn").removeAttr('disabled');
-  		});
-  	}else {
-  		alertify.warning('Escriba algo');
-   	}
+      });
+    }else {
+      alertify.warning('Escriba algo');
+    }
   });
 
   $("#categories").on('click', '.deleteCategory', function(event) {
-  	event.preventDefault();
+    event.preventDefault();
 
-  	idCategory = $(this).attr('id');
+    idCategory = $(this).attr('id');
 
-  	$.ajax({
-  		url: '/deleteCategory',
+    $.ajax({
+      url: '/deleteCategory',
       headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
-  		type: 'POST',
-  		dataType: 'json',
-  		data: {idCategory: idCategory},
+      type: 'POST',
+      dataType: 'json',
+      data: {idCategory: idCategory},
       beforeSend: function( xhr ) {
         $(".btn").attr('disabled','true');
         alertify.message('Eliminando Categoría...');
       },
-  	})
-		.always(function(e) {
-			if (e == '1'){
-  			alertify.error('Eliminado Exitosamente');	
-  			$("#categories").load(" #categories");
-			}else{
-  			alertify.warning('No se ha podido eliminar, la categoría contiene imagenes');	
-			}
+    })
+    .always(function(e) {
+      if (e == '1'){
+        alertify.error('Eliminado Exitosamente'); 
+        $("#categories").load(" #categories");
+      }else{
+        alertify.warning('No se ha podido eliminar, la categoría contiene imagenes'); 
+      }
       $(".btn").removeAttr('disabled');
-		});
+    });
   });
 
   $("#uploadImageForm").on('submit', function(event) {
